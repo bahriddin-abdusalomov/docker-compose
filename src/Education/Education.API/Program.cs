@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("Connect")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("Docker")));
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
